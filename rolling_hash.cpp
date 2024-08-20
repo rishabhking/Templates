@@ -3,6 +3,9 @@ using namespace std;
 
 #define int long long
 
+// How to use:
+// Use zero based indexing 
+
 class Hash{
 private:
     const int p1 = 31,p2 = 53;
