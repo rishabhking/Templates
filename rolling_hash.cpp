@@ -4,7 +4,7 @@ using namespace std;
 #define int long long
 
 // How to use:
-// Use zero based indexing 
+// zero based indexing 
 
 class Hash{
 private:
