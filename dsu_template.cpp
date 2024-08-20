@@ -3,11 +3,11 @@ using namespace std;
 
 const int N = 1e5+10;
 vector<int> par(N);
-vector<int> size(N);
+vector<int> sz(N);
 
 void make_set(int v){
     par[v] = v;
-    size[v] = 1;
+    sz[v] = 1;
 }
 
 int find_set(int v){
@@ -20,9 +20,9 @@ void union_set(int a,int b){
     b = find_set(b);
 
     if(a!=b){
-        if(size[a] < size[b]) swap(a,b);
+        if(sz[a] < sz[b]) swap(a,b);
         par[b] = a;
-        size[a] += size[b];
+        sz[a] += sz[b];
     }
 }
 
